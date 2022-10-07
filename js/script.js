@@ -14,6 +14,9 @@ Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagi
 
 
 //prendo eta , kilometri percorsi dal passeggero  e bottone 
+const userName = document.getElementById("username");
+console.log(userName);
+
 const userKm = document.getElementById("userkm");
 console.log(userKm);
 
@@ -29,9 +32,22 @@ console.log(pKm);
 const pAge = document.querySelector(".user-age-insert")
 console.log(pAge);
 
+const pName = document.querySelector(".user-name-insert");
+console.log(pName);
+
+const pCode = document.querySelector(".user-code-insert");
+console.log(pCode);
+
+const pCar = document.querySelector(".user-car-insert");
+console.log(pCar);
+
+
 const result = document.getElementById("result");
 
 btnInvia.addEventListener("click" , function (){
+    //trovo il nome e cognome dell'utente 
+    const userNameInput = userName.value;
+    console.log(userNameInput);
     // trovo il valore di km che ha inserito l'utente 
     const userKmInput = userKm.value;  
     console.log(userKmInput);
@@ -41,9 +57,14 @@ btnInvia.addEventListener("click" , function (){
     console.log(userAgeInput);
 
     //Restituisco in output il valore di km ed età del passaggero
-    pKm.innerHTML=`I kilometri che vuole percorrere il passeggero sono ${userKmInput}`;
-    pAge.innerHTML=`L'età del passeggero è di ${userAgeInput}`+ " anni";
+    pName.innerHTML=` ${userNameInput}`;
+    pKm.innerHTML=` ${userKmInput}`;
+    pAge.innerHTML=` ${userAgeInput}`+ " anni";
+    pCode.innerHTML=Math.floor(Math.random()*6000)+1000;
+    pCar.innerHTML=Math.floor(Math.random()*11)+1;
+
     //Azzero i valori una volta inseriti i dati 
+    userName.value="";
     userKm.value="";
     userAge.value="";
 

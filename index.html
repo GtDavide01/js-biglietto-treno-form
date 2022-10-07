@@ -9,28 +9,62 @@
 </head>
 <body>
 
-    <!-- div che richiede kilometri passegero  -->
-    <div class="div">
-        <label for="userkm">Quanti kilometri deve percorrere il passeggero?</label>
-        <input type="text" id="userkm"> 
-    </div>
-    <!-- div che richiede eta passeggero  -->
-    <div class="div">
-        <label for="userage">Quanti anni ha il passeggero?</label>
-        <input type="text" id="userage"> 
-    </div>
-
-    <div>
-        <button id="submit">Invia</button>
+    <div class="wrapper">
+        <!-- div che richiede nome e cognome  -->
+        <div class="wrappercontainer">
+            <div class="wrappersmall name">
+                <label for="username">Nome e Cognome</label>
+                <input type="text" id="username">
+            </div>
+            <!-- div che richiede kilometri passegero  -->
+            <div class="wrappersmall km">
+                <label for="userkm">Km da percorrere </label>
+                <input type="text" id="userkm"> 
+            </div>
+            <!-- div che richiede eta passeggero  -->
+            <div class="wrappersmall age">
+                <label for="userage">Età passeggero?</label>
+                <input type="text" id="userage"> 
+            </div>
+        </div>
+        <div class="wrappercontbutton">
+             <!-- div per il bottone -->
+            <button id="submit">Invia</button>
+            <button id="cancel">Annulla</button>
+        </div>
+       
+        
+    
     </div>
     
-    <div class="div">
-        <p class="user-km-insert">I kilometri che vuole percorrere il passeggero sono...</p>
-        <p class="user-age-insert">L'età del passeggero è di...</p>
-    </div>
-
-    <div class="div">
-        <h1 id="result"></h1>
+    <div class="wrapper">
+        <div class="wrappercontainer">
+            <div class="wrappersmall">
+                <h3>Nome passeggero</h3>
+                <p class="user-name-insert">Nome passeggero</p>
+            </div>
+            <div class="wrappersmall">
+                <h3>KM passaggero</h3>
+                <p class="user-km-insert">KM passaggero</p>
+            </div>
+            <div class="wrappersmall">
+                <h3>Età passeggero</h3>
+                <p class="user-age-insert">Età passeggero</p>
+            </div>
+            <div class="wrappersmall">
+                <h3>Codice</h3>
+                <p class="user-code-insert">Codice</p>
+            </div>
+            <div class="wrappersmall">
+                <h3>Carrozza</h3>
+                <p class="user-car-insert">Carrozza</p>
+            </div>
+            
+        </div>
+    
+        <div class="div">
+            <h1 id="result"></h1>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>
