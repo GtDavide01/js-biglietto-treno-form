@@ -57,9 +57,9 @@ btnInvia.addEventListener("click" , function (){
     console.log(userAgeInput);
 
     //Restituisco in output il valore di km ed età del passaggero
-    pName.innerHTML=` ${userNameInput}`;
-    pKm.innerHTML=` ${userKmInput}`;
-    pAge.innerHTML=` ${userAgeInput}`+ " anni";
+    pName.innerHTML=userNameInput;
+    pKm.innerHTML=userKmInput;
+    pAge.innerHTML=` ${userAgeInput}anni`;
     pCode.innerHTML=Math.floor(Math.random()*6000)+1000;
     pCar.innerHTML=Math.floor(Math.random()*11)+1;
 
